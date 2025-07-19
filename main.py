@@ -30,4 +30,4 @@ def whatsapp_bot():
     return str(response)
 
 if __name__ == "__main__":
-    app.run(port=80)
+    app.run(port=5000)

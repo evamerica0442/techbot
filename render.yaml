@@ -1,0 +1,12 @@
+# Exported from Render on 2025-07-19T22:46:22Z
+services:
+- type: web
+  name: techbot
+  runtime: python
+  repo: https://github.com/evamerica0442/techbot
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: python main.py
+  autoDeployTrigger: commit
+version: "1"

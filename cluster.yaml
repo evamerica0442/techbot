@@ -31,7 +31,6 @@ managedNodeGroups:
     maxSize: 6
     instanceType: t3.micro   # Free Tier eligible
     privateNetworking: true
-    releaseVersion: "1.29.0-20250704"
     updateConfig:
       maxUnavailablePercentage: 50
     labels:
@@ -48,3 +47,4 @@ remoteNetworkConfig:
     - cidrs: ["10.52.0.0/16"]
   remotePodNetworks:
     - cidrs: ["10.53.0.0/16"]
+

@@ -29,7 +29,7 @@ managedNodeGroups:
     desiredCapacity: 3
     minSize: 3
     maxSize: 6
-    instanceType: t3.micro   # Free Tier eligible
+    instanceType: c7i-flex.large   # Free Tier eligible
     privateNetworking: true
     updateConfig:
       maxUnavailablePercentage: 50
@@ -47,4 +47,5 @@ remoteNetworkConfig:
     - cidrs: ["10.52.0.0/16"]
   remotePodNetworks:
     - cidrs: ["10.53.0.0/16"]
+
 
